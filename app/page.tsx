@@ -13,12 +13,12 @@ export default function Home() {
 
       {/* Main Title */}
       <h1 className="text-4xl sm:text-6xl font-extrabold text-slate-900 tracking-tight max-w-3xl mb-4">
-        Hi, I'm <span className="text-pink-600">Lara Suarez</span>
+        Bonjour, I'm <span className="text-pink-600">Lara Suarez</span>
       </h1>
 
       {/* Subtitle */}
       <p className="text-lg sm:text-xl text-slate-600 max-w-2xl mb-8 leading-relaxed">
-        An Information Systems student passionate about building clean, functional, and creative web applications using modern technologies.
+        An Information Systems student passionate about building a functional, and creative web applications using modern technologies.
       </p>
 
       {/* Action Buttons */}
