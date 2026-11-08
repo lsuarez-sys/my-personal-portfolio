@@ -13,31 +13,31 @@ import {
 const skills = [
   {
     title: "Web Development",
-    description: "Creating responsive and user-friendly websites.",
+    description: "Building responsive, modern user interfaces with Next.js, React, and Tailwind CSS.",
     icon: Code2,
-    color: "bg-pink-100/70 border-pink-200 hover:bg-pink-100",
-    iconColor: "bg-pink-200/80 text-pink-700",
-  },
-  {
-    title: "Database Management",
-    description: "Organizing, managing, and working with data.",
-    icon: Database,
-    color: "bg-violet-100/70 border-violet-200 hover:bg-violet-100",
-    iconColor: "bg-violet-200/80 text-violet-700",
+    color: "bg-pink-50 border-pink-200 hover:bg-pink-100/60",
+    iconColor: "bg-pink-200/80 border border-pink-300 text-pink-700",
   },
   {
     title: "UI/UX Design",
-    description: "Designing simple, creative, and meaningful interfaces.",
+    description: "Crafting clean, accessible, and intuitive user experiences with cohesive color systems.",
     icon: Palette,
-    color: "bg-orange-100/70 border-orange-200 hover:bg-orange-100",
-    iconColor: "bg-orange-200/80 text-orange-700",
+    color: "bg-purple-50 border-purple-200 hover:bg-purple-100/60",
+    iconColor: "bg-purple-200/80 border border-purple-300 text-purple-700",
+  },
+  {
+    title: "Database Management",
+    description: "Structuring and managing backend data using SQL databases and modern backend frameworks.",
+    icon: Database,
+    color: "bg-sky-50 border-sky-200 hover:bg-sky-100/60",
+    iconColor: "bg-sky-200/80 border border-sky-300 text-sky-700",
   },
   {
     title: "Problem Solving",
-    description: "Exploring ideas and finding solutions through technology.",
+    description: "Applying critical thinking to resolve bugs, optimize features, and continuous learning.",
     icon: Lightbulb,
-    color: "bg-sky-100/70 border-sky-200 hover:bg-sky-100",
-    iconColor: "bg-sky-200/80 text-sky-700",
+    color: "bg-teal-50 border-teal-200 hover:bg-teal-100/60",
+    iconColor: "bg-teal-200/80 border border-teal-300 text-teal-700",
   },
 ];
 
@@ -47,31 +47,31 @@ export default function About() {
       
       {/* Header */}
       <div className="space-y-2">
-        <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-violet-100 border border-violet-200 text-violet-700 text-xs font-semibold uppercase tracking-wider mb-2">
-          <Sparkles className="w-3.5 h-3.5 text-violet-600" />
+        <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-purple-100 border border-purple-200 text-purple-700 text-xs font-semibold uppercase tracking-wider mb-2">
+          <Sparkles className="w-3.5 h-3.5 text-purple-600" />
           <span>Get To Know Me</span>
         </div>
         <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">
           About Me
         </h1>
-        <p className="text-muted-foreground">
-          A little introduction about who I am and what I do.
+        <p className="text-slate-600">
+          A quick glimpse into who I am, what drives my passion for technology, and the journey I'm on.
         </p>
       </div>
 
-      {/* 1. Introduction Card (Pastel Yellow Theme) */}
-      <Card className="border border-amber-200 bg-amber-100/70 hover:bg-amber-100 transition-all duration-300 shadow-sm overflow-hidden">
+      {/* 1. Introduction Card (Pastel Lavender Theme) */}
+      <Card className="border border-purple-200 bg-purple-50 hover:bg-purple-100/60 transition-all duration-300 shadow-sm overflow-hidden">
         <CardContent className="p-6 md:p-8">
           <div className="flex flex-col md:flex-row gap-8 items-center">
             
             {/* Left Icon Container Box */}
-            <div className="w-36 h-36 md:w-44 md:h-44 rounded-2xl bg-amber-200/80 border border-amber-300 flex items-center justify-center shrink-0 shadow-sm">
-              <GraduationCap className="w-20 h-20 text-amber-700" />
+            <div className="w-36 h-36 md:w-44 md:h-44 rounded-2xl bg-purple-200/80 border border-purple-300 flex items-center justify-center shrink-0 shadow-sm">
+              <GraduationCap className="w-20 h-20 text-purple-800" />
             </div>
 
             {/* Right Text Content */}
             <div className="space-y-4">
-              <h2 className="text-2xl md:text-3xl font-bold text-slate-800">
+              <h2 className="text-2xl md:text-3xl font-bold text-purple-950">
                 Hello, I'm Lara!
               </h2>
 
@@ -98,7 +98,7 @@ export default function About() {
       <section className="space-y-5">
         <div>
           <h2 className="text-2xl font-bold text-slate-900">What I'm Exploring</h2>
-          <p className="text-muted-foreground mt-1">
+          <p className="text-slate-600 mt-1">
             Areas that inspire me to learn and grow.
           </p>
         </div>
@@ -118,7 +118,7 @@ export default function About() {
                     <Icon className="w-6 h-6" />
                   </div>
 
-                  <h3 className="font-semibold text-lg text-slate-800">
+                  <h3 className="font-semibold text-lg text-slate-900">
                     {skill.title}
                   </h3>
 
@@ -132,14 +132,14 @@ export default function About() {
         </div>
       </section>
 
-      {/* 3. Personal Goals Box (Pastel Mint Green Theme) */}
-      <Card className="border border-emerald-200 bg-emerald-100/70 hover:bg-emerald-100 transition-all duration-300 shadow-sm">
+      {/* 3. Personal Goals Box */}
+      <Card className="border border-emerald-200 bg-emerald-50 hover:bg-emerald-100/60 transition-all duration-300 shadow-sm">
         <CardContent className="p-6 md:p-8 space-y-4">
           <div className="flex items-center gap-3">
             <div className="p-2.5 rounded-xl bg-emerald-200/80 border border-emerald-300 text-emerald-800 shrink-0">
               <Target className="w-6 h-6" />
             </div>
-            <h2 className="text-2xl font-bold text-slate-800">My Goal</h2>
+            <h2 className="text-2xl font-bold text-slate-900">My Goal</h2>
           </div>
 
           <p className="text-slate-700 leading-relaxed text-base">
