@@ -1,10 +1,25 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Sparkles } from "lucide-react";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-[75vh] text-center px-4">
+    <div className="flex flex-col items-center justify-center min-h-[75vh] text-center px-4 py-8">
       
+      {/* Profile Picture Container */}
+      <div className="relative mb-6">
+        <div className="w-36 h-36 sm:w-44 sm:h-44 rounded-full overflow-hidden border-4 border-pink-200 shadow-md ring-4 ring-pink-100">
+          <Image
+            src="/profile.jpg"
+            alt="Lara Suarez"
+            width={176}
+            height={176}
+            className="object-cover w-full h-full"
+            priority
+          />
+        </div>
+      </div>
+
       {/* Decorative Badge */}
       <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-pink-100 border border-pink-200 text-pink-800 text-sm font-medium mb-6 shadow-sm">
         <Sparkles className="h-4 w-4 text-pink-600" />
@@ -18,7 +33,7 @@ export default function Home() {
 
       {/* Subtitle */}
       <p className="text-lg sm:text-xl text-slate-600 max-w-2xl mb-8 leading-relaxed">
-        An Information Systems student passionate about building a functional, and creative web applications using modern technologies.
+        An Information Systems student passionate about building functional and creative web applications using modern technologies.
       </p>
 
       {/* Action Buttons */}
