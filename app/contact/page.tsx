@@ -10,7 +10,7 @@ export default function Contact() {
       <div>
         <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">Contact Me</h1>
         <p className="text-muted-foreground mt-1">
-          Have a question, collaboration idea, or project in mind? Reach out below!
+          Have a question, a project idea, or just want to say hi? Send me a message below!
         </p>
       </div>
 
