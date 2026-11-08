@@ -6,7 +6,7 @@ const educationList = [
     Graduate: "GAS, General Academic Strand",
     institution: "Pamukid National High School",
     period: "2022 - 2024",
-    description: "Focused on software engineering, data structures, algorithms, and web development.",
+    description: "Completed the General Academic Strand (GAS) program, focusing on a broad range of subjects to prepare for higher education.",
     achievements: ["Graduated with honors"],
   },
 ];
@@ -16,7 +16,7 @@ export default function Education() {
     <div className="space-y-8 max-w-3xl mx-auto">
       <div>
         <h1 className="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">Education</h1>
-        <p className="text-muted-foreground mt-1">Academic background and formal training.</p>
+        <p className="text-muted-foreground mt-1">Academic background.</p>
       </div>
 
       <div className="space-y-6">
